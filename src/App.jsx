@@ -2,10 +2,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import './App.css'
 
-import Navbar from './components/navbar'
-import Home from './pages/home/home'
+import Navbar from './components/Navbar'
+import Home from './pages/home/Home'
 import About from './pages/about/About'
-import Portfolio from './pages/portfolio/portfolio'
+import Portfolio from './pages/portfolio/Portfolio'
 import Contact from './pages/contact/Contact'
 
 function App() {
