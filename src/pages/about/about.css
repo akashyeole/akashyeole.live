@@ -175,5 +175,8 @@
 .resume__description {
     font-size: var(--smaller-font-size);
     line-height: 1.6;
-    
+}
+
+.resume__description li {
+    text-align: justify;
 }

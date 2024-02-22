@@ -140,7 +140,7 @@ export const resume = [
     icon: <FaBriefcase />,
     year: '2023 - PRESENT',
     title: 'Software Engineer Intern <span> Infineon Technologies </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,',
+    desc: '<ol> <li> Worked on Digital design system by developing HTML web components(stepper, sidebar & progressbar) based on brand design using <first-color-text>Stencil JS</first-color-text> and <first-color-text>Storybook JS</first-color-text>. These DDS components  has 2000+ install on npmjs repository.</li> <li> Created exmaple webpages using <first-color-text>React JS</first-color-text> to demonstarte use of DDS components.</li> <li>Wrote <first-color-text>Python</first-color-text> script to download 1000+ files from source and upload them to a desitnation(remote FTP).</li> <li>Worked on a <first-color-text>Python</first-color-text> script that normalizes the file names and makes them SEO friendly. This script helped all the division in company to normalize more than 1000 existing files.</li> <li>Used <first-color-text>Akamai CDN tool</first-color-text> to manage URL redirection to infineon website.</li> </ol>',
   },  
 
   {
@@ -148,8 +148,8 @@ export const resume = [
     category: 'education',
     icon: <FaGraduationCap />,
     year: '2021 - PRESENT',
-    title: 'B. Tech. in Computer Science <span> Vishwakarma Institute of Information Technology, Pune </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore',
+    title: 'Bachelor of Technology in Computer Science <span> Vishwakarma Institute of Information Technology, Pune </span>',
+    desc: '',
   },
 
   {
@@ -158,7 +158,7 @@ export const resume = [
     icon: <FaGraduationCap />,
     year: '2018 - 2021',
     title: 'Diploma in Computer Technology <span> K. K. Wagh Polytechnic, Nashik </span>',
-    desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
+    desc: '',
   },
 
   {

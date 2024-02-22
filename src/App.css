@@ -185,3 +185,7 @@ img {
     text-align: center;
     line-height: 60px;
 }
+
+first-color-text {
+    color: var(--first-color)
+}
