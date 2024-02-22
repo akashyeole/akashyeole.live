@@ -67,6 +67,15 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 2px;
+}  
+
+::-webkit-scrollbar-thumb {
+    background: var(--first-color);
+    border-radius: 10px;
+}
+
 body,
 input,
 textarea {
