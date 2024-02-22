@@ -8,8 +8,10 @@ import { loadSlim } from 'tsparticles-slim'
 import particlesConfig from './particles.json'
 import { loadRoundedRectShape } from "tsparticles-shape-rounded-rect";
 
-const Home = () => {
+const Home = ({ innerRef }) => {
   const particlesInit = useCallback(async (engine) => {
+    const themeColor = document.documentElement.style.getPropertyValue('--first-color');
+    particlesConfig["particles"]["color"] = themeColor;
     await loadRoundedRectShape(engine)
     await loadSlim(engine);
   }, []);
@@ -18,7 +20,7 @@ const Home = () => {
   }, []);
   
   return (
-    <section className="home section grid">
+    <section className="home section grid" ref = { innerRef }>
       <Particles
         id="tsparticles"
         options={particlesConfig}
@@ -33,7 +35,7 @@ const Home = () => {
           </h1>
 
           <p className="home__description">
-            I'm a Indian based web developer focused on crafting clean and user-friendy experiences, I am passionate about building excellent software that improves the lives of those around me.
+            As a web developer, I am deeply invested in creating clean and intuitive experiences for users. I am driven by my commitment to building software that simplifies complex processes and tasks.
           </p>
 
           <Link to='/about' className='button'>

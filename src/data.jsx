@@ -59,60 +59,48 @@ export const links = [
 export const personalInfo = [
   {
     id: 1,
-    title: 'First Name : ',
-    description: 'Akash',
+    title: 'Name : ',
+    description: 'Akash Yeole',
   },
 
   {
     id: 2,
-    title: 'Last Name : ',
-    description: 'Yeole',
-  },
-
-  {
-    id: 3,
     title: 'Age : ',
     description: '21 Years',
   },
 
   {
-    id: 4,
+    id: 3,
     title: 'Nationality : ',
     description: 'India',
   },
 
   {
-    id: 5,
+    id: 4,
     title: 'Freelance : ',
     description: 'Available',
   },
 
   {
-    id: 6,
+    id: 5,
     title: 'Address : ',
     description: 'Nashik, Maharashtra, India',
   },
 
   {
-    id: 7,
+    id: 6,
     title: 'Phone : ',
     description: '+91 775799XXXX',
   },
 
   {
-    id: 8,
+    id: 7,
     title: 'Email : ',
     description: 'akashyeole02@gmail.com',
   },
 
   {
-    id: 9,
-    title: 'Github : ',
-    description: 'akashyeole',
-  },
-
-  {
-    id: 10,
+    id: 8,
     title: 'Langages : ',
     description: 'English, Marathi, Hindi',
   },
@@ -121,27 +109,28 @@ export const personalInfo = [
 export const stats = [
   {
     id: 1,
-    no: '12+',
+    no: '1+',
     title: 'Years of <br /> Experience',
   },
 
   {
     id: 2,
-    no: '97+',
+    no: '11+',
     title: 'Completed <br /> Projects',
   },
 
   {
     id: 3,
-    no: '81+',
-    title: 'Happy <br /> Customers',
+    no: '6+',
+    title: 'Years Spent In Programming',
   },
-
   {
     id: 4,
-    no: '53+',
-    title: ' Awards <br /> Won',
+    no: '11+',
+    title: 'Acheivements & Awards',
   },
+
+  
 ];
 
 export const resume = [
@@ -149,104 +138,87 @@ export const resume = [
     id: 1,
     category: 'experience',
     icon: <FaBriefcase />,
-    year: '2018 - PRESENT',
-    title: 'Web Developer <span> Envato </span>',
+    year: '2023 - PRESENT',
+    title: 'Software Engineer Intern <span> Infineon Technologies </span>',
     desc: 'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,',
-  },
+  },  
 
   {
     id: 2,
-    category: 'experience',
-    icon: <FaBriefcase />,
-    year: '2013 - 2018',
-    title: 'UI/UX Designer <span> Themeforest </span>',
-    desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
+    category: 'education',
+    icon: <FaGraduationCap />,
+    year: '2021 - PRESENT',
+    title: 'B. Tech. in Computer Science <span> Vishwakarma Institute of Information Technology, Pune </span>',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore',
   },
 
   {
     id: 3,
-    category: 'experience',
-    icon: <FaBriefcase />,
-    year: '2005 - 2013',
-    title: 'Consultant <span> Videohive </span>',
-    desc: 'Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur elit, sed do eiusmod tempor duntt',
+    category: 'education',
+    icon: <FaGraduationCap />,
+    year: '2018 - 2021',
+    title: 'Diploma in Computer Technology <span> K. K. Wagh Polytechnic, Nashik </span>',
+    desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
   },
 
   {
     id: 4,
     category: 'education',
     icon: <FaGraduationCap />,
-    year: '2015',
-    title: 'Engineering Degree <span> Oxford University </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore',
-  },
-
-  {
-    id: 5,
-    category: 'education',
-    icon: <FaGraduationCap />,
-    year: '2012',
-    title: 'Master Degree <span> KIEV University </span>',
-    desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
-  },
-
-  {
-    id: 6,
-    category: 'education',
-    icon: <FaGraduationCap />,
-    year: '2009',
-    title: 'Bachelor Degree <span> Tunis High School </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore',
+    year: '2018',
+    title: 'Secondary Education <span> St. Francis High School, Nashik </span>',
+    desc: '',
   },
 ];
 
 export const skills = [
   {
     id: 1,
-    title: 'Html',
-    percentage: '25',
+    title: 'Javascript',
+    percentage: '80',
   },
 
   {
     id: 2,
-    title: 'Javascript',
-    percentage: '89',
+    title: 'HTML',
+    percentage: '60',
   },
 
   {
     id: 3,
-    title: 'Css',
+    title: 'CSS',
     percentage: '70',
   },
 
   {
     id: 4,
-    title: 'Php',
-    percentage: '66',
+    title: 'Mongo DB',
+    percentage: '70',
   },
 
   {
     id: 5,
-    title: 'Wordpress',
-    percentage: '95',
+    title: 'Python',
+    percentage: '90',
   },
-
+  
   {
     id: 6,
-    title: 'Jquery',
-    percentage: '50',
+    title: 'React JS',
+    percentage: '80',
   },
+
 
   {
     id: 7,
-    title: 'Angular',
-    percentage: '65',
+    title: 'Stencil JS',
+    percentage: '85',
   },
 
   {
     id: 8,
-    title: 'React',
-    percentage: '45',
+    title: 'Express JS',
+    percentage: '80',
   },
 ];
 

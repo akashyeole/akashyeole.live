@@ -21,12 +21,13 @@ const getStorageTheme = () => {
     return theme;
 }
 
-const Themes = () => {
+const Themes = ({ changeKey }) => {
     const [showSwitcher, setShowSwitcher] = useState(false);
     const [color, setColor] = useState(getStorageColor());
     const [theme, setTheme] = useState(getStorageTheme());
 
     const changeColor = (color) => {
+        changeKey();
         setColor(color);
     };
 
