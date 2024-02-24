@@ -43,13 +43,15 @@
         margin-top: 20px;
     }
 
-    .resume__icon {
+    .resume__icon,
+    .award__icon {
         width: 36px;
         height: 36px;
         line-height: 38px;
     }
 
-    .resume__item {
+    .resume__item, 
+    .award__item {
         padding-left: 55px;
     }
 
@@ -175,6 +177,10 @@
 
     .container {
         max-width: 540px;
+    }
+
+    .awards__container {
+        grid-template-columns: 1fr;
     }
 
     .portfolio__modal-content {

@@ -222,6 +222,45 @@ export const skills = [
   },
 ];
 
+export const awards = [
+  {
+    id: 1,
+    title: 'Won Code Royale: Coding Competition by CSI-VIIT (Won Cash Prize)',
+    link: ''
+  },
+
+  {
+    id: 2,
+    title: 'Knight on LeetCode (Top 4% in world, 1900+ Max Rating)',
+    link: 'https://drive.google.com/file/d/12xLRujWs6Q5JjBO4d4KHYra0NDzAZTgH/view?usp=drive_link'
+  },
+
+  {
+    id: 3,
+    title: 'ICPC Regionalist 2023 (AIR 159)',
+    link: 'https://drive.google.com/file/d/1LSk6tcKBN6KpojGZcZtpoNBcmNqiTHqN/view?usp=sharing'
+  },
+
+  {
+    id: 4,
+    title: '3 Star on Codechef (1775 Max Rating)',
+    link: 'https://drive.google.com/file/d/1xMj7LWzZ2JARjM7ql5A5MLQ_Wycd2L1G/view?usp=drive_link'
+  },
+
+  {
+    id: 5,
+    title: 'Pupil on CodeForces',
+    link: 'https://drive.google.com/file/d/1FXRJHSKv4zIH1D-4RwmJeG8O1SQFhi3_/view?usp=drive_link'
+  },
+
+  {
+    id: 6,
+    title: 'Top 6/104 \'7 Days of Code Challenge\' by CSI-VIIT',
+    link: 'https://drive.google.com/file/d/1GmM5aGKn6MEADZ8yJlDczW912SrZHYY7/view?usp=sharing'
+  },
+
+]
+
 export const portfolio = [
   {
     id: 1,

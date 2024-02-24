@@ -1,7 +1,8 @@
 .about__container,
 .info__list,
 .stats,
-.resume__container {
+.resume__container,
+.awards__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: flex-start;
 }
@@ -109,7 +110,8 @@
     margin-top: 24px;
 }
 
-.resume__item {
+.resume__item,
+.award__item {
     position: relative;
     padding-left: 60px;
 }
@@ -126,7 +128,8 @@
     border-left: 1px solid var(--border-color);
 }
 
-.resume__icon {
+.resume__icon,
+.award__icon {
     position: absolute;
     left: 0;
     top: 0;
@@ -179,4 +182,26 @@
 
 .resume__description li {
     text-align: justify;
+}
+
+.award__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.award__title {
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--small-font-size);
+    font-weight: var(--weight-600);
+    position: relative;
+    top: 8px;
+}
+
+.award__link {
+    color: var(--title-color);
+    transition: color 0.2s ease;
+}
+
+.award__link:hover {
+    color: var(--first-color)
 }

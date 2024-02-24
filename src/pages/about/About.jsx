@@ -2,6 +2,7 @@ import React from 'react'
 import Info from '../../components/Info'
 import Stats from '../../components/Stats'
 import Skills from '../../components/Skills'
+import Awards from '../../components/Awards'
 import { resume } from '../../data'
 import ResumeItem from '../../components/ResumeItem'
 import { FaDownload } from 'react-icons/fa'
@@ -67,6 +68,18 @@ const About = () => {
             })}
           </div>
         </div>
+      </section>
+
+      <div className="separator"></div>
+
+      <section className="awards">
+            <h3 className="section__subtitle subtitle__center">My Achievements</h3>
+
+            <div className="awards__container grid">
+              {/* <ul className="grid"> */}
+                <Awards />
+              {/* </ul> */}
+            </div>
       </section>
     </main>
   )
