@@ -2,12 +2,9 @@ import React from 'react'
 import {
   FaEnvelopeOpen,
   FaPhoneSquare,
-  FaFacebookF,
-  FaTwitter,
-  FaYoutube,
-  FaDribbble
 } from "react-icons/fa"
 import { FiSend } from 'react-icons/fi'
+import Socials from '../../components/Socials'
 import "./contact.css"
 
 const Contact = () => {
@@ -39,20 +36,8 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="contact__socials">
-            <a href="https://facebook.com" className="contact__social-link">
-              <FaFacebookF />
-            </a>
-            <a href="https://twitter.com" className="contact__social-link">
-              <FaTwitter />
-            </a>
-            <a href="https://youtube.com" className="contact__social-link">
-              <FaYoutube />
-            </a>
-            <a href="https://dribbble.com" className="contact__social-link">
-              <FaDribbble />
-            </a>
-          </div>
+          
+          <Socials />
           
         </div>
 

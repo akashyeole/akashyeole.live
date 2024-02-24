@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@coreui/icons": "^3.0.1",
+    "@coreui/icons-react": "^2.2.1",
     "html-react-parser": "^5.1.2",
     "react": "^18.2.0",
     "react-circular-progressbar": "^2.1.0",

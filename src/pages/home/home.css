@@ -51,6 +51,12 @@
     margin-block: 16px 32px;
 }
 
+.home__more-social {
+    display: flex;
+    align-items: center;
+    gap: 150px
+}
+
 .color__block {
     position: fixed;
     height: 200%;

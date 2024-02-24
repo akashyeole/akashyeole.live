@@ -1,0 +1,28 @@
+.contact__socials {
+    display: flex;
+    column-gap: 16px;
+}
+
+.contact__social-link {
+    background-color: var(--container-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 44px;
+    transition: all 0.3s ease;
+}
+
+.contact__social-link:hover {
+    background-color: var(--first-color);
+}
+
+.contact__social-icon {
+    transition: all 0.3s ease;
+    fill: var(--title-color);
+    width: 18px;
+}
+
+.contact__social-link:hover .contact__social-icon{
+    fill: var(--text-white);
+}

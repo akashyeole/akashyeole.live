@@ -1,4 +1,5 @@
 import React, { useCallback } from 'react'
+import Socials from '../../components/Socials'
 import Profile from '../../assets/home.jpg'
 import { Link } from 'react-router-dom'
 import { FaArrowRight } from 'react-icons/fa'
@@ -38,12 +39,15 @@ const Home = ({ innerRef }) => {
             As a web developer, I am deeply invested in creating clean and intuitive experiences for users. I am driven by my commitment to building software that simplifies complex processes and tasks.
           </p>
 
-          <Link to='/about' className='button'>
-            More About Me{' '} 
-            <span className='button__icon'>
-              <FaArrowRight/>
-            </span>
-          </Link>
+          <div className="home__more-social">
+            <Link to='/about' className='button'>
+              More About Me{' '} 
+              <span className='button__icon'>
+                <FaArrowRight/>
+              </span>
+            </Link>
+            <Socials />
+          </div>
         </div>
       </div>
 

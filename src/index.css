@@ -21,6 +21,10 @@
         font-size: var(--small-font-size);
     }
 
+    .home__more-social {
+        gap: 100px;
+    }
+
     .stats__title {
         padding-left: 35px;
     }
@@ -90,6 +94,14 @@
 
     .home__data {
         padding-right: 0;
+    }
+
+    .home__more-social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .section {
@@ -173,6 +185,10 @@
 
     .home__title span {
         display: block;
+    }
+
+    .home__more-social {
+        margin-bottom: 30px;
     }
 
     .container {
