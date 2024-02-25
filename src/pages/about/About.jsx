@@ -6,7 +6,7 @@ import Awards from '../../components/Awards'
 import { resume } from '../../data'
 import ResumeItem from '../../components/ResumeItem'
 import { FaDownload } from 'react-icons/fa'
-import CV from '../../assets/steve-Cv.pdf'
+import RESUME from '../../assets/Resume.pdf'
 import './about.css'
 
 const About = () => {
@@ -30,7 +30,7 @@ const About = () => {
               <Info />
             </ul>
 
-            <a href={CV} download='' className="button">Download CV
+            <a href={RESUME} download='' className="button">Download Resume
               <span className="button__icon">
                 <FaDownload />
               </span>
