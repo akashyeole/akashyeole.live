@@ -6,14 +6,18 @@ import {
   FaBriefcase,
   FaGraduationCap,
   FaCode,
+  FaRegBuilding
 } from 'react-icons/fa';
-import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
+import { FiFileText, FiUser, FiExternalLink, FiDownload } from 'react-icons/fi';
 
-import Work1 from './assets/project-1.jpeg';
-import Work2 from './assets/project-2.jpg';
-import Work3 from './assets/project-3.jpeg';
-import Work4 from './assets/project-4.jpeg';import Work5 from './assets/project-5.jpg';
-import Work6 from './assets/project-6.jpg';
+import Project1 from './assets/project_1.png';
+import Project2 from './assets/project_2.png';
+import Project3 from './assets/project_3.png';
+import Project4 from './assets/project_4.png';
+import Project5 from './assets/project_5.png';
+import Project6 from './assets/project_6.png';
+import Project7 from './assets/project_7.png';
+import Project8 from './assets/project_8.png';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -43,9 +47,9 @@ export const links = [
 
   {
     id: 3,
-    name: 'Portfolio',
+    name: 'Projects',
     icon: <FaFolderOpen className='nav__icon' />,
-    path: '/portfolio',
+    path: '/projects',
   },
 
   {
@@ -258,173 +262,204 @@ export const awards = [
     title: 'Top 6/104 \'7 Days of Code Challenge\' by CSI-VIIT',
     link: 'https://drive.google.com/file/d/1GmM5aGKn6MEADZ8yJlDczW912SrZHYY7/view?usp=sharing'
   },
-
+  
 ]
 
 export const portfolio = [
   {
-    id: 1,
-    img: Work1,
-    title: 'Photo Editing',
+    id: 8,
+    img: Project8,
+    title: 'Notewell (Ongoing)',
     details: [
       {
         icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Photo',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
+        title: 'Project Description : ',
+        desc: 'Notwell is a digital diary and document storage that allows user to fetch, update, add or delete his notes or document(files) form anywhere using the web browser',
       },
       {
         icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'Adobe Photoshop',
+        title: 'Technology : ',
+        desc: 'React JS | Express JS | Mongo DB | Lerna',
       },
       {
         icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'www.dribble.com',
+        title: 'Github Link : ',
+        desc: 'https://github.com/akashyeole/notewell',
       },
     ],
   },
 
   {
-    id: 2,
-    img: Work2,
-    title: 'Website Design',
+    id: 7,
+    img: Project7,
+    title: 'Flatmate and a flat finder',
     details: [
       {
         icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Website',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
+        title: 'Project Description : ',
+        desc: 'A web application that help user to find the flat or register his/her flat to rent it. An application comes with integrated map to locate the address of the flat.',
       },
       {
         icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'React JS',
+        title: 'Technology : ',
+        desc: 'React JS | Express JS | Mongo DB | Maps API',
       },
       {
         icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'www.dribble.com',
+        title: 'Github Link : ',
+        desc: 'https://github.com/akashyeole/flatmates-frontend',
       },
     ],
   },
-
+  
   {
-    id: 3,
-    img: Work3,
-    title: 'Video Editing',
+    id: 6,
+    img: Project6,
+    title: 'Digital Design System (Contributor)',
     details: [
       {
         icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Video',
+        title: 'Project Description : ',
+        desc: 'A Digital Design System provides the HTML components based on Infineon\'s brand design which can be used different framworks. My contribution- Stepper Component, improvement in existing components and more',
       },
       {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'Adobe Premium',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'www.dribble.com',
-      },
-    ],
-  },
-
-  {
-    id: 4,
-    img: Work4,
-    title: 'Video Editing',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Video',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
+        icon: <FaRegBuilding />,
+        title: 'Organisation : ',
+        desc: 'Infineon Technologies',
       },
       {
         icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'Adobe Premium',
+        title: 'Technology : ',
+        desc: 'Stencil JS | Storybook JS | SCSS | Typescript',
       },
       {
         icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'www.dribble.com',
+        title: 'Preview Link : ',
+        desc: 'https://infineon.github.io/infineon-design-system-stencil',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Github Link : ',
+        desc: 'https://github.com/Infineon/infineon-design-system-stencil',
       },
     ],
   },
 
   {
     id: 5,
-    img: Work5,
-    title: 'Landing Page',
+    img: Project5,
+    title: 'Random Problem Picker',
     details: [
       {
-        title: 'Project : ',
-        desc: 'Website',
+        icon: <FiFileText />,
+        title: 'Project Description : ',
+        desc: 'A random problem picker is an extension that allows a codeforces user to randomly choose a problem within given difficulty range. Has over 50 users',
       },
       {
-        title: 'Client : ',
-        desc: 'Dribble',
+        icon: <FaCode />,
+        title: 'Tenchnology : ',
+        desc: 'Javascript | HTML | CSS',
       },
       {
-        title: 'Language : ',
-        desc: 'React JS, Node JS',
+        icon: <FiDownload />,
+        title: 'Download Link : ',
+        desc: 'https://microsoftedge.microsoft.com/addons/detail/codeforces-problem-picker/glfmjkphohikmafkeloackdijnfpkaee',
       },
       {
-        title: 'Preview : ',
-        desc: 'www.dribble.com',
+        icon: <FiExternalLink />,
+        title: 'Github Link : ',
+        desc: 'https://github.com/akashyeole/cf-problem-picker',
       },
     ],
   },
 
   {
-    id: 6,
-    img: Work6,
-    title: 'Photo Editing',
+    id: 4,
+    img: Project4,
+    title: 'Flowers Classifier',
     details: [
       {
         icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Photo',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
+        title: 'Project Description : ',
+        desc: 'An ML web application that takes images as an input and outputs the flower type if flower, tells not a flower otherwise.',
       },
       {
         icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'Adobe Photoshop',
+        title: 'Technology : ',
+        desc: 'Flask | Tensorflow | Python',
       },
       {
         icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'www.dibble.com',
+        title: 'Github Link : ',
+        desc: 'https://github.com/akashyeole/Flower-Classifier',
       },
     ],
   },
+
+  {
+    id: 3,
+    img: Project3,
+    title: 'Portfolio Design',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project Description : ',
+        desc: 'A web portfolio design using HTML, CSS and Vanilla Javascript. The contact page allows visitor to send messages',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Technology : ',
+        desc: 'HTML | CSS | Javascript | Express JS',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Github Link : ',
+        desc: 'https://github.com/akashyeole/My-Portfolio',
+      },
+    ],
+  },
+
+  {
+    id: 2,
+    img: Project2,
+    title: 'Workout Buddy',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project Description : ',
+        desc: 'A web application to track daily workout activity. It demonstartes the CRUD operations on MongoDB',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Technology : ',
+        desc: 'React JS | Express JS | Mongo DB',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Github Link : ',
+        desc: 'https://github.com/akashyeole/workout-buddy',
+      },
+    ],
+  },
+
+  {
+    id: 1,
+    img: Project1,
+    title: 'Online Voting System',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project Description : ',
+        desc: 'An android application that enables E-voting and help conduct online surveys',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Technology : ',
+        desc: 'Android | Java | SQL',
+      }
+    ],
+  },
+
 ];
 
 export const themes = [

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {
   FaEnvelopeOpen,
   FaPhoneSquare,
@@ -8,6 +8,11 @@ import Socials from '../../components/Socials'
 import "./contact.css"
 
 const Contact = () => {
+
+  useEffect(() => {
+    document.title = 'Akash Yeole - Contact Me'
+  }, []);
+
   return (
     <section className="contact section">
       <h2 className="section__title">

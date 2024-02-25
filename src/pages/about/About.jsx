@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Info from '../../components/Info'
 import Stats from '../../components/Stats'
 import Skills from '../../components/Skills'
@@ -10,6 +10,11 @@ import CV from '../../assets/steve-Cv.pdf'
 import './about.css'
 
 const About = () => {
+
+  useEffect(() => {
+    document.title = 'Akash Yeole - About'
+  }, []);
+
   return (
     <main className="section container">
       <section className="about">

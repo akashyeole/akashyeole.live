@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react'
+import React, { useCallback, useEffect } from 'react'
 import Socials from '../../components/Socials'
 import Profile from '../../assets/home.jpg'
 import { Link } from 'react-router-dom'
@@ -18,6 +18,10 @@ const Home = ({ innerRef }) => {
   }, []);
 
   const particlesLoaded = useCallback(async (container) => {
+  }, []);
+
+  useEffect(() => {
+    document.title = 'Akash Yeole'
   }, []);
   
   return (

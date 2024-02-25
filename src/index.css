@@ -101,7 +101,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
     }
 
     .section {
@@ -204,7 +204,7 @@
     }
 
     .modal__close {
-        top: -9%;
+        top: 0;
         right: 0;
     }
 }

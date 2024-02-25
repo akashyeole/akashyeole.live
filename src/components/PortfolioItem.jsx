@@ -28,6 +28,7 @@ const PortfolioItem = ({ img, title, details }) => {
                                     <span className="item__icon">{icon}</span>
                                     <div>
                                         <span className="item__title">{title}</span>
+                                        <br/>
                                         <span className="item__details">{desc}</span>
                                     </div>
                                 </li>
