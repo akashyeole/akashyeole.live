@@ -39,6 +39,11 @@
     font-weight: var(--weight-500);
 }
 
+.info__desc a {
+    all: unset;
+    cursor: pointer;
+}
+
 .form__input-group {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

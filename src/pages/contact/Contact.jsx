@@ -30,14 +30,14 @@ const Contact = () => {
               <FaEnvelopeOpen className='info__icon' />
               <div>
                 <span className="info__title">Mail me</span>
-                <h4 className="info__desc">akashyeole02@gmail.com</h4>
+                <h4 className="info__desc"><a href="mailto:akashyeole02@gmail.com">akashyeole02@gmail.com</a></h4>
               </div>
             </div>
             <div className="info__item">
               <FaPhoneSquare className='info__icon' />
               <div>
                 <span className="info__title">Call me</span>
-                <h4 className="info__desc">+91 77579 9XXXX</h4>
+                <h4 className="info__desc"><a href="tel:+917757992429">+91 77579 92429</a></h4>
               </div>
             </div>
           </div>

@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect } from 'react'
 import Socials from '../../components/Socials'
+// import Profile from '../../assets/profilephoto.png'
 import Profile from '../../assets/home.jpg'
 import { Link } from 'react-router-dom'
 import { FaArrowRight } from 'react-icons/fa'
@@ -36,7 +37,7 @@ const Home = ({ innerRef }) => {
       <div className="home__content">
         <div className="home__data">
           <h1 className="home__title">
-            <span>I'm Akash Yeole</span> Web Developer
+            <span>I'm Akash Yeole</span> Software Developer
           </h1>
 
           <p className="home__description">
