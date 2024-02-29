@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect } from 'react'
 import Socials from '../../components/Socials'
-// import Profile from '../../assets/profilephoto.png'
-import Profile from '../../assets/home.jpg'
+import Profile from '../../assets/profile.png'
 import { Link } from 'react-router-dom'
 import { FaArrowRight } from 'react-icons/fa'
 import './home.css'
@@ -41,7 +40,7 @@ const Home = ({ innerRef }) => {
           </h1>
 
           <p className="home__description">
-            As a web developer, I am deeply invested in creating clean and intuitive experiences for users. I am driven by my commitment to building software that simplifies complex processes and tasks.
+            As a software developer, I am deeply invested in creating clean and intuitive experiences for users. I am driven by my commitment to building software that simplifies complex processes and tasks.
           </p>
 
           <div className="home__more-social">

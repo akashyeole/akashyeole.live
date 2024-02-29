@@ -55,7 +55,8 @@
 .home__more-social {
     display: flex;
     align-items: center;
-    gap: 150px
+    /* gap: 150px */
+    justify-content: space-between;
 }
 
 .color__block {
