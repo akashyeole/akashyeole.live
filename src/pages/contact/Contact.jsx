@@ -7,13 +7,14 @@ import { FiSend, FiCheckCircle, FiAlertCircle, FiXCircle} from 'react-icons/fi'
 import Socials from '../../components/Socials'
 import "./contact.css"
 
-const URL = 'http://localhost:4000/sendMessage';
+const URL = 'https://newportfolio-backend-utp1.onrender.com/sendMessage';
 
 const Contact = () => {
   const [nameError, setNameError] = useState(false);
   const [messageError, setMessageError] =  useState(false);
   const [mailError, setMailError] =  useState(false);
   const [repsonseNote, setResponseNote] = useState({});
+  const [overlayStatus, setOverlayStatus] = useState('')
 
   useEffect(() => {
     document.title = 'Akash Yeole - Contact Me'
@@ -21,6 +22,7 @@ const Contact = () => {
 
   const handleForm = async (e) => {
     e.preventDefault();
+    setOverlayStatus('show');
     setMessageError(false);
     setNameError(false);
     setMailError(false);
@@ -39,11 +41,12 @@ const Contact = () => {
     if(!email) {
       setMailError(true);
     }
-
+    
     if(!name || !message || !email) {
+      setOverlayStatus('');
       return;
     }
-
+    
     const sentResponse = await fetch(URL, {
       method: 'POST',
       headers: {
@@ -56,13 +59,17 @@ const Contact = () => {
         message
       }) 
     });
-
+    
     const responseData = await sentResponse.json();
     if(responseData.message){
       setResponseNote({message: responseData.message, color: responseData.color});
+      if(sentResponse.status === 200) {
+        e.target.reset();
+      }
     }else{
       setResponseNote({message: 'An unknown error occurred!', color: 'red'});
     }
+    setOverlayStatus('');
   }
 
   return (
@@ -99,6 +106,10 @@ const Contact = () => {
         </div>
 
         <form className="contact__form" onSubmit={handleForm}>
+          <div className={`contact__form-overlay ${overlayStatus}`}>
+            <div className='overlay-loader'>
+            </div>
+          </div>
           <div className="form__input-group">
             <div className="form__input-div">
               <input 

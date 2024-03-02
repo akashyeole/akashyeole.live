@@ -1,5 +1,6 @@
 .contact__container {
     grid-template-columns: 4fr 8fr;
+    /* position: relative; */
 }
 
 .contact__title {
@@ -123,4 +124,71 @@
 
 .form__control.error::placeholder {
     color: red;
+}
+
+.contact__form {
+    position: relative;
+}
+
+.contact__form-overlay {
+    width: 103%;
+    height: 103%;
+    top: -1.5%;
+    left: -1.5%;
+    background-color: rgba(128, 128, 128, 0.362);
+    position: absolute;
+    z-index: 5;
+    border-radius: 15px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__form-overlay.show{
+    display: flex;
+}
+
+.overlay-loader {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid var(--first-color);
+    border-top: none;
+    border-left: none;
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+}
+
+
+@-webkit-keyframes rotating {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
 }
