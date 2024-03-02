@@ -207,7 +207,7 @@
         top: 0;
         right: 0;
     }
-    
+
     .form__submit-div {
         padding-right: 0px;
     }
@@ -277,15 +277,12 @@
 }
 
 @media screen and (max-width: 450px){
-    .home__img {
-        display: none;
-    }
-
+    
     .home__content {
         margin-block: auto;
         text-align: center;
     }
-
+    
     .home__title {
         font-size: var(--h1-font-size);
     }
@@ -293,18 +290,22 @@
     .home__description {
         text-align: justify;
     }
-
+    
     .info__title {
         display: block;
         margin-bottom: 4px;
     }
-
+    
     .stats__box {
         padding: 15px 15px 25px 20px;
     }
 }
 
 @media screen and (max-width: 350px) {
+    .home__img {
+        display: none;
+    }
+    
     .home__title span {
         display: inline;
     }
