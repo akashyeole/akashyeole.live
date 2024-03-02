@@ -11,21 +11,22 @@ import { loadRoundedRectShape } from "tsparticles-shape-rounded-rect";
 
 const Home = ({ innerRef }) => {
   const particlesInit = useCallback(async (engine) => {
-    const themeColor = document.documentElement.style.getPropertyValue('--first-color');
-    particlesConfig["particles"]["color"] = themeColor;
     await loadRoundedRectShape(engine)
     await loadSlim(engine);
   }, []);
-
+  
   const particlesLoaded = useCallback(async (container) => {
   }, []);
-
+  
   useEffect(() => {
+    const themeColor = document.documentElement.style.getPropertyValue('--first-color');
+    particlesConfig["particles"]["color"] = themeColor;
     document.title = 'Akash Yeole'
   }, []);
   
   return (
     <section className="home section grid" ref = { innerRef }>
+    {/* <section className="home section grid"> */}
       <Particles
         id="tsparticles"
         options={particlesConfig}
