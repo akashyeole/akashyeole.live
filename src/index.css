@@ -207,6 +207,10 @@
         top: 0;
         right: 0;
     }
+    
+    .form__submit-div {
+        padding-right: 0px;
+    }
 
     .style__switcher {
         top: 0.5%

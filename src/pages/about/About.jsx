@@ -24,7 +24,7 @@ const About = () => {
 
         <div className="about__container grid">
           <div className="about__info">
-            <h3 className="section__subtitle">Personal Infos</h3>
+            <h3 className="section__subtitle">Personal Information</h3>
 
             <ul className="info__list grid">
               <Info />
@@ -81,9 +81,7 @@ const About = () => {
             <h3 className="section__subtitle subtitle__center">My Achievements</h3>
 
             <div className="awards__container grid">
-              {/* <ul className="grid"> */}
                 <Awards />
-              {/* </ul> */}
             </div>
       </section>
     </main>

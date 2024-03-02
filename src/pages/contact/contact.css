@@ -74,7 +74,53 @@
     height: 160px;
 }
 
+.form__submit-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding-right: 30px;
+}
+
 .contact__button-icon {
     font-size: var(--h3-font-size);
     line-height: 64px;
+}
+
+.submit__response-div {
+    display: flex;
+    align-items: center;
+    font-size: var(--small-font-size);
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.submit__button {
+    min-width: 210px;
+}
+
+.submit__response-div.red {
+    color: red;
+}
+
+.submit__response-div.orange {
+    color: orange;
+}
+
+.submit__response-div.green {
+    color: green;
+}
+
+.submit__response-icon {
+    font-size: var(--large-font-size);
+    text-align: center;
+    line-height: 8px;
+}
+
+.form__control.error {
+    border: 1px solid red;
+}
+
+.form__control.error::placeholder {
+    color: red;
 }

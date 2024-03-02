@@ -1,17 +1,69 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   FaEnvelopeOpen,
   FaPhoneSquare,
 } from "react-icons/fa"
-import { FiSend } from 'react-icons/fi'
+import { FiSend, FiCheckCircle, FiAlertCircle, FiXCircle} from 'react-icons/fi'
 import Socials from '../../components/Socials'
 import "./contact.css"
 
+const URL = 'http://localhost:4000/sendMessage';
+
 const Contact = () => {
+  const [nameError, setNameError] = useState(false);
+  const [messageError, setMessageError] =  useState(false);
+  const [mailError, setMailError] =  useState(false);
+  const [repsonseNote, setResponseNote] = useState({});
 
   useEffect(() => {
     document.title = 'Akash Yeole - Contact Me'
   }, []);
+
+  const handleForm = async (e) => {
+    e.preventDefault();
+    setMessageError(false);
+    setNameError(false);
+    setMailError(false);
+    const formData = new FormData(e.target);
+    const formObj = Object.fromEntries(formData.entries());
+    let name = formObj['name'].trim();
+    let email = formObj['email'].trim();
+    let subject = formObj['subject'].trim();
+    let message = formObj['message'].trim();
+    if(!name) {
+      setNameError(true);
+    }
+    if(!message) {
+      setMessageError(true);
+    }
+    if(!email) {
+      setMailError(true);
+    }
+
+    if(!name || !message || !email) {
+      return;
+    }
+
+    const sentResponse = await fetch(URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        subject,
+        message
+      }) 
+    });
+
+    const responseData = await sentResponse.json();
+    if(responseData.message){
+      setResponseNote({message: responseData.message, color: responseData.color});
+    }else{
+      setResponseNote({message: 'An unknown error occurred!', color: 'red'});
+    }
+  }
 
   return (
     <section className="contact section">
@@ -46,13 +98,14 @@ const Contact = () => {
           
         </div>
 
-        <form className="contact__form">
+        <form className="contact__form" onSubmit={handleForm}>
           <div className="form__input-group">
             <div className="form__input-div">
               <input 
                 type="text" 
                 placeholder='Your Name' 
-                className="form__control" 
+                className={`form__control ${nameError ? 'error' : ''}`} 
+                name='name'
               />
             </div>
 
@@ -60,30 +113,45 @@ const Contact = () => {
               <input 
                 type="email" 
                 placeholder='Your Email' 
-                className="form__control" 
+                className={`form__control ${mailError ? 'error' : ''}`} 
+                name='email'
               />
             </div>
             <div className="form__input-div">
               <input 
                 type="text" 
                 placeholder='Your Subject' 
-                className="form__control" 
+                className="form__control"
+                name='subject' 
               />
             </div>
           </div>
           <div className="form__input-div">
               <textarea
+                name='message'
                 placeholder='Your Message' 
-                className="form__control textarea">  
+                className={`form__control textarea ${messageError ? 'error' : ''}`} >  
               </textarea>
-            </div>
-
-            <button className="button">
+          </div>
+          <div className='form__submit-div'>
+            <button className="submit__button button">
               Send Message
               <span className="button__icon contact__button-icon">
                 <FiSend />
               </span>
             </button>
+            {
+              repsonseNote.message &&  
+              <div className={`submit__response-div ${repsonseNote.color}`}>
+                <span className="submit__response-icon">
+                  {repsonseNote.color === 'red' && <FiXCircle />}
+                  {repsonseNote.color === 'orange' && <FiAlertCircle />}
+                  {repsonseNote.color === 'green' && <FiCheckCircle />}
+                </span>
+                {repsonseNote.message}
+              </div>
+            }
+          </div>
         </form>
       </div>
     </section>
