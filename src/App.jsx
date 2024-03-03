@@ -21,10 +21,10 @@ function App() {
       <Navbar />
       <Themes changeKey = {changeKey}/>
       <Routes>
-        <Route index element={<Home key = {key}/>}/>
-        <Route path='about' element={<About />} />
-        <Route path='projects' element={<Portfolio />} />
-        <Route path='contact' element={<Contact />} />
+        <Route path='/' element={<Home key = {key}/>} />
+        <Route path='/about' element={<About />} />
+        <Route path='/projects' element={<Portfolio />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
     </BrowserRouter>
   )

@@ -9,7 +9,7 @@ import { loadSlim } from 'tsparticles-slim'
 import particlesConfig from './particles.json'
 import { loadRoundedRectShape } from "tsparticles-shape-rounded-rect";
 
-const Home = ({ innerRef }) => {
+const Home = ({ key }) => {
   const particlesInit = useCallback(async (engine) => {
     await loadRoundedRectShape(engine)
     await loadSlim(engine);
@@ -25,7 +25,7 @@ const Home = ({ innerRef }) => {
   }, []);
   
   return (
-    <section className="home section grid" ref = { innerRef }>
+    <section className="home section grid" ref = { key }>
     {/* <section className="home section grid"> */}
       <Particles
         id="tsparticles"
