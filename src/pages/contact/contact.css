@@ -130,6 +130,10 @@
     position: relative;
 }
 
+.contact__form-note {
+    font-size: var(--tiny-font-size);
+}
+
 .contact__form-overlay {
     width: 103%;
     height: 103%;

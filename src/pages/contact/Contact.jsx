@@ -143,6 +143,7 @@ const Contact = () => {
                 placeholder='Your Message' 
                 className={`form__control textarea ${messageError ? 'error' : ''}`} >  
               </textarea>
+            <span className='contact__form-note'> * Since the application is hosted on a free hosting service, sending a message may take a longer time. </span>
           </div>
           <div className='form__submit-div'>
             <button className="submit__button button">
