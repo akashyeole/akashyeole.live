@@ -96,7 +96,7 @@ const Contact = () => {
               <FaPhoneSquare className='info__icon' />
               <div>
                 <span className="info__title">Call me</span>
-                <h4 className="info__desc"><a href="tel:+917757992429">+91 77579 92429</a></h4>
+                <h4 className="info__desc"><a href="tel:+91775799XXXX">+91 77579 92429</a></h4>
               </div>
             </div>
           </div>
