@@ -185,7 +185,7 @@
 }
 
 .award__item:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .award__title {
@@ -195,11 +195,15 @@
     font-weight: var(--weight-600);
     position: relative;
     top: 8px;
+    display: flex;
+    gap: 10px;
+    align-content: center;
 }
 
 .award__link {
     color: var(--title-color);
     transition: color 0.2s ease;
+    font-size: var(--large-font-size);
 }
 
 .award__link:hover {
