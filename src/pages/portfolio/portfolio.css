@@ -102,6 +102,7 @@
 .item__details {
     color: var(--title-color);
     font-size: var(--small-font-size);
+    word-break: break-all;
 }
 
 .item__details {
