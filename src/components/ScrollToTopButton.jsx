@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaArrowUp } from "react-icons/fa"
+import { FaChevronUp } from "react-icons/fa"
 
 
 const ScrollToTopButton = () => {
@@ -9,7 +9,7 @@ const ScrollToTopButton = () => {
   }
 
   return (
-    <FaArrowUp onClick={scrollTop} className='scroll-up-button'/>
+    <FaChevronUp onClick={scrollTop} className='scroll-up-button'/>
   )
 }
 

@@ -192,8 +192,8 @@ first-color-text {
 
 .scroll-up-button {
     position: fixed;
-    color: var(--text-white);
-    background-color: var(--first-color);
+    color: var(--text-color);
+    background-color: var(--container-color);
     font-size: 3rem;
     bottom: 1.2rem;
     right: -4rem;
