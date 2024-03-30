@@ -17,7 +17,7 @@ const About = () => {
 
   return (
     <main className="section container">
-      <section className="about">
+      <section id="about" className="about">
         <h2 className="section__title">
           About <span>Me</span>
         </h2>
@@ -45,7 +45,7 @@ const About = () => {
 
       <div className="separator"></div>
 
-      <section className="skills">
+      <section id="skills" className="skills">
         <h3 className="section__subtitle subtitle__center">My Skills</h3>
         <div className="skills__container grid">
           <Skills />
@@ -54,7 +54,7 @@ const About = () => {
 
       <div className="separator"></div>
 
-      <section className="resume">
+      <section id="resume" className="resume">
         <h3 className="section__subtitle subtitle__center">My Experience & Education</h3>
 
         <div className="resume__container grid">
@@ -77,7 +77,7 @@ const About = () => {
 
       <div className="separator"></div>
 
-      <section className="awards">
+      <section id="awards" className="awards">
             <h3 className="section__subtitle subtitle__center">My Achievements</h3>
 
             <div className="awards__container grid">
