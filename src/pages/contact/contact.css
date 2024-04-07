@@ -157,8 +157,7 @@
     height: 50px;
     border-radius: 50%;
     border: 5px solid var(--first-color);
-    border-top: none;
-    border-left: none;
+    border-top: 5px solid transparent;
     -webkit-animation: rotating 2s linear infinite;
     -moz-animation: rotating 2s linear infinite;
     -ms-animation: rotating 2s linear infinite;
