@@ -8,6 +8,10 @@
     .grid {
         gap: 20px;
     }
+    
+    .home__content {
+        margin-left: 10%;
+    }
 
     .home__data {
         padding-right: 40px;
@@ -92,6 +96,17 @@
         grid-template-columns: 5fr 7fr;
     }
 
+    .home__img {
+        height: 90%;
+        margin-left: 10%;
+    }
+
+    .home__content {
+        max-width: 400px;
+        margin-left: 15%;
+        margin-right: 10%;
+    }
+
     .home__data {
         padding-right: 0;
     }
@@ -167,11 +182,13 @@
         height: 270px;
         border-radius: 50%;
         margin-top: auto;
+        margin-left: 0;
     }
 
     .home__content {
         max-width: 500px;
         text-align: center;
+        margin: 0;
         margin-bottom: auto;
     }
 

@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect } from 'react'
 import Socials from '../../components/Socials'
-import Profile from '../../assets/profile.png'
+import Profile from '../../assets/profile.jpeg'
 import { Link } from 'react-router-dom'
 import { FaArrowRight } from 'react-icons/fa'
 import './home.css'
