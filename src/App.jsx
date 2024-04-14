@@ -19,7 +19,6 @@ function App() {
 
   useEffect(()=>{
     const scrollButton = document.querySelector('.scroll-up-button');
-    console.log(scrollButton);
     const setScrollTopToVisible = () => {
       if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
         scrollButton.style.right = '1.9rem'
