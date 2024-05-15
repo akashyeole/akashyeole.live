@@ -51,6 +51,7 @@
     place-items: center;
     padding: 15px;
     overflow-y: scroll;
+    cursor: default;
 }
 
 .portfolio__modal-content {
@@ -69,6 +70,7 @@
     width: 50px;
     height: 50px;
     filter: invert(0.8);
+    cursor: pointer;
 }
 
 .modal__title {
@@ -107,6 +109,16 @@
 
 .item__details {
     font-weight: var(--weight-600);
+}
+
+.item__details a {
+    all: unset;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.item__details a:hover {
+    color: var(--first-color);
 }
 
 .modal__img {

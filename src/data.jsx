@@ -283,7 +283,7 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: 'Github Link : ',
-        desc: 'https://github.com/akashyeole/notewell',
+        desc: '<a target="_blank" href="https://github.com/akashyeole/notewell" > NoteWell </a>',
       },
     ],
   },
@@ -306,7 +306,7 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: 'Github Link : ',
-        desc: 'https://github.com/akashyeole/flatmates-frontend',
+        desc: '<a target="_blank" href="https://github.com/akashyeole/flatmates-frontend"> Flatmate and a flat finder</a> ',
       },
     ],
   },
@@ -334,12 +334,12 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: 'Preview Link : ',
-        desc: 'https://infineon.github.io/infineon-design-system-stencil',
+        desc: '<a target="_blank" href="https://infineon.github.io/infineon-design-system-stencil"> DDS storybook</a>',
       },
       {
         icon: <FiExternalLink />,
         title: 'Github Link : ',
-        desc: 'https://github.com/Infineon/infineon-design-system-stencil',
+        desc: '<a target="_blank" href="https://github.com/Infineon/infineon-design-system-stencil"> DDS open source</a>',
       },
     ],
   },
@@ -362,12 +362,12 @@ export const portfolio = [
       {
         icon: <FiDownload />,
         title: 'Download Link : ',
-        desc: 'https://microsoftedge.microsoft.com/addons/detail/codeforces-problem-picker/glfmjkphohikmafkeloackdijnfpkaee',
+        desc: '<a target="_blank" href="https://microsoftedge.microsoft.com/addons/detail/codeforces-problem-picker/glfmjkphohikmafkeloackdijnfpkaee"> Download Extension </a>',
       },
       {
         icon: <FiExternalLink />,
         title: 'Github Link : ',
-        desc: 'https://github.com/akashyeole/cf-problem-picker',
+        desc: '<a target="_blank" href="https://github.com/akashyeole/cf-problem-picker"> Contribute to the Project </a>',
       },
     ],
   },
@@ -390,7 +390,7 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: 'Github Link : ',
-        desc: 'https://github.com/akashyeole/Flower-Classifier',
+        desc: '<a target="_blank" href="https://github.com/akashyeole/Flower-Classifier"> Flower Classifier Github</a>',
       },
     ],
   },
@@ -413,7 +413,7 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: 'Github Link : ',
-        desc: 'https://github.com/akashyeole/My-Portfolio',
+        desc: '<a target="_blank" href="https://github.com/akashyeole/My-Portfolio"> Portfolio design Github </a>',
       },
     ],
   },
