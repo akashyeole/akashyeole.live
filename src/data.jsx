@@ -11,7 +11,6 @@ import {
 import { FiFileText, FiUser, FiExternalLink, FiDownload } from 'react-icons/fi';
 
 import Project1 from './assets/project_1.png';
-import Project2 from './assets/project_2.png';
 import Project3 from './assets/project_3.png';
 import Project4 from './assets/project_4.png';
 import Project5 from './assets/project_5.png';
@@ -415,29 +414,6 @@ export const portfolio = [
         icon: <FiExternalLink />,
         title: 'Github Link : ',
         desc: 'https://github.com/akashyeole/My-Portfolio',
-      },
-    ],
-  },
-
-  {
-    id: 2,
-    img: Project2,
-    title: 'Workout Buddy',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project Description : ',
-        desc: 'A web application to track daily workout activity. It demonstartes the CRUD operations on MongoDB',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Technology : ',
-        desc: 'React JS | Express JS | Mongo DB',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Github Link : ',
-        desc: 'https://github.com/akashyeole/workout-buddy',
       },
     ],
   },
