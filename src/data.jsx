@@ -352,7 +352,7 @@ export const portfolio = [
       {
         icon: <FiFileText />,
         title: 'Project Description : ',
-        desc: 'A random problem picker is an extension that allows a codeforces user to randomly choose a problem within given difficulty range. Has over 50 users',
+        desc: 'A random problem picker is an extension that allows a codeforces user to randomly choose a problem within given difficulty range. Has over 100+ users',
       },
       {
         icon: <FaCode />,
