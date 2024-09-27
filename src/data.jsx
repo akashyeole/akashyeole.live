@@ -139,7 +139,7 @@ export const resume = [
     year: '2024 - PRESENT',
     title: 'Software Engineer <span> Infineon Technologies </span>',
     desc: `<ol> 
-            <li> Continuing to drive the evolution of the Digital design system by incorporating new components such as Segmented controls and Chip and optmizing the functinality of existing components.</li>
+            <li> Continuing to drive the evolution of the Digital design system by incorporating new components such as Segmented controls and Chip and optimizing the functionality of existing components.</li>
             <li> Developed exmaple webpages using <first-color-text>React JS</first-color-text> to demonstarte use of DDS components.</li> 
             <li> Developed a <first-color-text>Python</first-color-text> automation script to streamline the file download process and securely store it in an SFTP server, significantly enhancing data management efficiency in S&M Department. </li> 
           </ol>`,
